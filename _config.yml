@@ -8,6 +8,11 @@ copyright: © Golasowski 2021
 sass:
     style: compressed
 
+webrick:
+  headers:
+    Cache-Control: public,must-revalidate,max-age=315360000
+    Access-Control-Allow-Origin: *
+
 collections:
     category:
         output: true
