@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Starboard</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="theme-color" content="#323232">
+		<link rel="preload" href="./dist/inter.var.woff2" as="font" type="font/woff2" crossorigin="">
+		<script async="" defer="defer" src="./plausible.js"></script>
+		<link rel="shortcut icon" href="favicon.ico">
+		<link href="./starboard.2fcb5ff475e5fcb8a384.css" rel="stylesheet">
+		<script src="./starboard.2fcb5ff475e5fcb8a384.js"></script>
+	</head>
+	<body>
+		<div id="visual-history-container"></div>
+		<starboard-navbar>
+			<nav class="navbar navbar-main" role="navigation" aria-label="main navigation">
+				<div class="navbar-brand">
+					<a class="navbar-item" href="./index.html" style="padding-left:1.6rem">
+						<b>Starboard</b>
+					</a>
+					<a role="button" aria-label="menu" class="navbar-burger burger" aria-expanded="false">
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+					</a>
+				</div>
+				<div class="navbar-menu">
+					<div class="navbar-start">
+						<a href="./JupyStar.html" class="navbar-item">Jupystar</a>
+					</div>
+					<div class="navbar-end">
+						<div class="navbar-item">
+							<div class="buttons">
+								<a href="http://127.0.0.1:8084/server/terminate" class="button semi-bold" style="border-color: transparent; background-color: transparent;">
+									Terminate Local Server
+								</a>
+								<a href="/load" class="button is-primary semi-bold">
+									Load Notebook
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</starboard-navbar>
+		<div class="main-content">
+			<starboard-jupystar>
+				<div class="jupystar-header-container">
+					<h1 class="title" style="font-size:2.8em;font-weight:700;margin-bottom:.6em;margin-top:.4em">Jupystar</h1>
+					<div>
+						<p>Open any <a href="https://jupyter.org">Jupyter</a> notebook as an entirely in-browser <a href="https://github.com/gzuidhof/starboard-notebook">Starboard</a> notebook.<br><b>Note: this is very experimental</b>, you will probably have to edit the notebook somewhat. Read about the <b><a href="https://starboard.gg/nb/nY6EXTP">limitations and workarounds</a></b>.</p>
+						<form style="margin-top:1em">
+							<div class="field">
+								<div class="control has-icons-left has-icons-right">
+									<input id="url-field" autocomplete="" class="input is-error is-small" type="url" placeholder="" value="">
+									<span class="icon is-small is-left">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" role="img" fill="currentColor" height="20" width="20" aria-hidden="false" aria-label="Link">
+											<path d="M31.7 4.3a7.176 7.176 0 00-10.148 0c-.385.386-4.264 4.222-5.351 5.309a8.307 8.307 0 013.743.607c.519-.52 3.568-3.526 3.783-3.741a4.1 4.1 0 015.8 5.8l-7.119 7.115a4.617 4.617 0 01-3.372 1.3 3.953 3.953 0 01-2.7-1.109 4.154 4.154 0 01-1.241-1.626 2.067 2.067 0 00-.428.318l-1.635 1.712a7.144 7.144 0 001.226 1.673c2.8 2.8 7.875 2.364 10.677-.438l6.765-6.768a7.174 7.174 0 000-10.152z"></path>
+											<path d="M15.926 25.824c-.52.52-3.5 3.547-3.713 3.762a4.1 4.1 0 11-5.8-5.8L13.6 16.6a4.58 4.58 0 013.366-1.292 4.2 4.2 0 013.784 2.782 2.067 2.067 0 00.428-.318l1.734-1.721a7.165 7.165 0 00-1.226-1.673 7.311 7.311 0 00-10.26.048l-7.187 7.186a7.176 7.176 0 0010.148 10.149c.386-.386 4.194-4.243 5.281-5.33a8.3 8.3 0 01-3.742-.607z"></path>
+										</svg>
+									</span>
+								</div>
+								<p class="help has-text-grey"><!---->Enter a URL to the raw <code>.ipynb</code> file, <a href="https%3A%2F%2Fraw.githubusercontent.com%2Fiurisegtovich%2FPyTherm-applied-thermodynamics%2Fmaster%2Fcontents%2Fmain-lectures%2F2-numpy-matplotlib-vdW-EoS-isotherms.ipynb">click here for an example</a>.<!----></p>
+							</div>
+						</form>
+					</div>
+				</div>
+			</starboard-jupystar>
+		</div>
+		<starboard-footer>
+			<footer class="is-size-5">
+				<p><a href="/" class="is-size-3 has-text-weight-semibold"><i style="margin-right:4px">
+					<svg version="1.1" fill="currentColor" viewBox="0 0 31.954 33.005" xmlns="http://www.w3.org/2000/svg" width="26px" height="26px">
+						<g transform="translate(-35.386 -36.649)">
+							<path transform="scale(.26458)" d="m190.22 142.29a58.783 58.783 0 0 0-52.697 58.4 58.783 58.783 0 0 0 58.783 58.783 58.783 58.783 0 0 0 54.43-36.678 63.532 63.532 0 0 1-62.902-63.5 63.532 63.532 0 0 1 2.3867-17.006z"></path>
+						</g>
+					</svg>
+				</i> Starboard</a><br></p>
+				<p class="is-size-7 has-text-grey-light" style="margin-top:-4px">Literate notebooks powered by your browser</p>
+				<ul style="margin-top:8px;max-width:200px" class="is-size-7 has-text-grey-light">
+					<li>
+						<div class="footer-link-container">
+							<a href="/about">About</a> <a href="/terms">Terms of Service</a>
+						</div>
+					</li>
+					<li>
+						<div class="footer-link-container">
+							<a href="/open">Open Startup</a> <a href="/privacy">Privacy</a>
+						</div>
+					</li>
+					<li>
+						<div class="footer-link-container">
+							<a href="/open#metrics">Metrics</a>
+							<a href="https://github.com/gzuidhof/starboard-notebook">Open Source</a>
+						</div>
+					</li><br>
+					<p class="is-size-7 has-text-grey-light" style="margin-bottom:8px">Bootstrapped in London, UK</p>
+				</ul>
+			</footer>
+		</starboard-footer>
+	</body>
+</html>
