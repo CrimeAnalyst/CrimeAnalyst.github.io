@@ -206,14 +206,6 @@ These colors are CSS variables, usage: `var(--var-name)`
 ## Add-ons
 Add-ons are distributed as Jekyll plugins. Just download any desired `.rb` file from the repository `_plugin` folder and put it in your `_plugin` folder.
 
-### Buttons (button.rb)
-Adds a tag to simplify insertion of buttons:
-```
-{% button red|https://www.example.com/|/assets/img/icons/cog.svg %}
-Download binary
-{% endbutton %}
-```
-
 ## 🤝 Contributing
  
 Bug reports and pull requests are welcome on [GitHub](https://github.com/andreondra/jekyll-theme-simplex).
