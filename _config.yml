@@ -10,7 +10,7 @@ sass:
 
 webrick:
   headers:
-    Cache-Control: "public,must-revalidate,max-age=315360000"
+    Cache-Control: "max-age=315360000"
     Access-Control-Allow-Origin: "*"
 
 collections:
